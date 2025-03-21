@@ -43,6 +43,7 @@ footer {
 }
 
 .footer-social a img {
+    background-color: gray;
     width: 24px;
     height: 24px;
     margin: 0 5px;

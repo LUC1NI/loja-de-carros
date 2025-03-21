@@ -1,0 +1,515 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.footer-logo img {
+    max-width: 150px;
+}
+
+.footer-links a, .footer-social a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1em;
+}
+
+.footer-links a:hover, .footer-social a:hover {
+    color: red;
+}
+
+.footer-social a img {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #bbb;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between; /* Ajusta os elementos para os extremos */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 170px;
+}   
+
+header nav {
+    display: flex;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #86898b;
+}
+
+#carrossel, #lista-carros {
+    padding: 20px;
+}
+
+.logoloja {
+    width: 250px;
+    display: inline;
+}
+
+.linksmenu {
+    list-style:none;
+    display: flex;
+    margin-right: 30px;
+}
+
+
+#sobre-loja {
+    display: flex;
+}
+
+#sobre-loja {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between; /* Distribui os itens, um à esquerda e outro à direita */
+}
+
+.h2-sobre {
+    font-size: 29px;
+    padding: 30px;
+    text-align: left; /* Alinha o texto à esquerda */
+    margin: 20px;
+    margin-top: 30px;
+}
+
+.p-sobre {
+    margin-top: 55PX;
+    font-size: 13px;
+    margin-left: 100px;
+    text-align: center; /* Alinha o texto à direita */
+    color: #86898b;
+}
+
+
+.iamgemPrincipal {
+    width: 100%;
+}
+
+.text-adress {
+    margin-top: 70px;
+    padding-top: 40px;
+    margin-bottom: 55px;
+    text-align: center;
+    color: white;
+}
+
+.maps {
+    display: flex;
+    justify-content: center;  /* Centraliza o conteúdo horizontalmente */
+    align-items: center;      /* Centraliza o conteúdo verticalmente, caso o contêiner tenha altura */
+    width: 60%;               /* Largura do contêiner */
+    margin: 0 auto;           /* Garante que o contêiner ficará centralizado */
+}
+
+.maps iframe {
+    width: 100%;              /* Faz o iframe preencher a largura do contêiner */
+    height: 290px;            /* Altura do mapa (ajuste conforme necessário) */
+    border: 0;                /* Remove a borda ao redor do iframe */
+    margin-bottom: 50px;
+}
+
+.fundo-map {
+    background-color: black;
+}
+
+#vendedores {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#vendedores h2 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.vendedores-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Responsividade: vai alinhar em várias linhas se necessário */
+}
+
+.vendedor {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px; /* Tamanho fixo das caixas */
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vendedor img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.vendedor-info {
+    margin-top: 15px;
+}
+
+.vendedor h3 {
+    font-size: 19px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.vendedor p {
+    font-size: 1em;
+    color: #777;
+    font-weight: bold;
+}
+
+.vendedor:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Filtros - Estilos para a seção de filtros */
+#filtros {
+    margin: 30px 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#filtros h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#filtros label {
+    font-size: 16px;
+    color: #555;
+    margin-right: 10px;
+}
+
+#filtros select {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+/* Lista de veículos */
+/* Seção de veículos */
+#veiculos {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#veiculos h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.veiculos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.veiculo {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.veiculo img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+.veiculo-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.veiculo-info h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.veiculo-info p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.veiculo-info .preco {
+    font-size: 21px;
+    color: #000;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+
+.veiculo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-detalles {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-detalles:hover {
+    background-color: red;
+    transform: scale(1.05);
+}
+
+/* Geral para a seção de contato */
+#contato {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#contato h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Container principal da seção de contato */
+.contato-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite responsividade */
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+/* Informações de contato */
+.contato-info {
+    flex: 1;
+    min-width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contato-info h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.contato-info p {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.contato-info i {
+    color: red;
+    margin-right: 10px;
+}
+
+/* Formulário de contato */
+.contato-form {
+    flex: 1;
+    min-width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contato-form h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.contato-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-form label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.contato-form input,
+.contato-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contato-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contato-form button {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contato-form button:hover {
+    background-color: red;
+    transform: scale(1.05);
+}
+
+
+.caixacontato {
+    padding-right: 20px;
+}
+
+#filtrar {
+    padding: 6px; /* Mais espaço interno para um botão mais largo */
+    background-color: red; /* Cor de fundo vermelha */
+    color: white; /* Texto branco */
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mão para indicar interatividade */
+    transition: all 0.3s ease; /* Transição suave para os efeitos */
+    width: auto; /* O botão se ajusta ao tamanho do texto */
+    margin: 19px; /* Espaçamento acima do botão */
+}
+
+/* Efeito de hover no botão */
+#filtrar:hover {
+    background-color: rgb(223, 12, 12); /* Tom mais escuro de vermelho quando passar o mouse */
+    transform: scale(1.05); /* Leve aumento no tamanho do botão */
+}
+
+/* Efeito de foco no botão */
+#filtrar:focus {
+    outline: none; /* Remove a borda de foco padrão */
+    box-shadow: 0 0 10px rgba(241, 80, 80, 0.5); /* Sombra suave ao focar */
+}
+
+#limpar-filtro {
+    padding: 6px; /* Mesmo padding para alinhamento */
+    background-color: red; /* Cor de fundo vermelha */
+    color: white; /* Texto branco */
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mão para indicar interatividade */
+    transition: all 0.3s ease; /* Transição suave para os efeitos */
+    width: auto; /* O botão se ajusta ao tamanho do texto */
+    margin-left: 10px; /* Espaçamento entre os botões */
+    display: none; /* Inicialmente escondido */
+}
+
+/* Efeito de hover no botão Limpar Filtro */
+#limpar-filtro:hover {
+    background-color: rgb(223, 12, 12); /* Tom mais escuro de vermelho quando passar o mouse */
+    transform: scale(1.05); /* Leve aumento no tamanho do botão */
+}
+
+/* Efeito de foco no botão Limpar Filtro */
+#limpar-filtro:focus {
+    outline: none; /* Remove a borda de foco padrão */
+    box-shadow: 0 0 10px rgba(241, 80, 80, 0.5); /* Sombra suave ao focar */
+}
+
+#preco-maximo {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+}
